@@ -1,3 +1,7 @@
+document.querySelectorAll(".table-container").forEach((tableContainer) => {
+    tableContainer.remove();
+});
+
 const pages = document.querySelectorAll(".page");
 const steps = document.querySelectorAll(".step");
 
