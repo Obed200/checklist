@@ -624,3 +624,83 @@ input[type="checkbox"]{
     }
 
 }
+
+/* ========================= */
+/* BILINGUAL LAYOUT */
+/* ========================= */
+
+.bilingual-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+    margin:20px 0;
+}
+
+.language-section{
+    padding:20px;
+    background:#f8fafc;
+    border-radius:8px;
+    border:1px solid #e5e7eb;
+}
+
+.language-section h4{
+    color:#111827;
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:12px;
+    padding-bottom:8px;
+    border-bottom:2px solid #d1d5db;
+}
+
+.kinyarwanda{
+    text-align:left;
+}
+
+.english{
+    text-align:left;
+}
+
+.language-section .list{
+    margin-left:20px;
+    margin-right:0;
+}
+
+.kinyarwanda .list{
+    margin-left:20px;
+}
+
+.english .list{
+    margin-left:20px;
+}
+
+/* Bilingual Responsive */
+@media (max-width:1024px){
+    .bilingual-container{
+        gap:20px;
+    }
+}
+
+@media (max-width:768px){
+    .bilingual-container{
+        grid-template-columns:1fr;
+        gap:15px;
+    }
+
+    .kinyarwanda,
+    .english{
+        text-align:left;
+    }
+
+    .english .list{
+        margin-right:0;
+        margin-left:20px;
+    }
+
+    .language-section{
+        padding:15px;
+    }
+
+    .language-section h4{
+        font-size:16px;
+    }
+}
